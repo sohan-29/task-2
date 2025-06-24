@@ -14,9 +14,12 @@ function toDoList() {
         listTag.appendChild(listItem);
         const toDoitem = document.createTextNode("" + input);
         listTag.appendChild(toDoitem);
-        const deleteBtn = document.createElement("span");
+        const deleteBtn = document.createElement("img");
+        deleteBtn.src = "src/delete.svg";
         deleteBtn.className = "deleteButton";
-        deleteBtn.textContent = "x"
+        deleteBtn.alt = "x";
+        deleteBtn.title = "Delete";
+
         listTag.appendChild(deleteBtn);
         const listContainer = document.getElementById("listContainer");
         listContainer.append(listTag);
