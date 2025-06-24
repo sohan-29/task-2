@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <script src="toDoList.js"></script>
     <title>To Do List</title>
 </head>
 
 <body>
+    <p class="heading">To-Do List : </p>
     <div class="container" id="toDoListContainer">
-        <input class="input" id="input" type="text" value="" class="" />
-        <button class="button" id="addBtn">Add</button>
-        <ol class="listContainer">
+        <div id="interactionContainer">
+            <input class="input" id="input" type="text" value="" class="" />
+            <button class="button" id="addBtn">Add</button>
+        </div>
+        <ol id="listContainer">
         </ol>
     </div>
 </body>

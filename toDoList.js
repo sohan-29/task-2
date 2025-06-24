@@ -16,9 +16,9 @@ function toDoList() {
         listTag.appendChild(toDoitem);
         const deleteBtn = document.createElement("span");
         deleteBtn.className = "deleteButton";
-        deleteBtn.textContent = "X"
+        deleteBtn.textContent = "x"
         listTag.appendChild(deleteBtn);
-        const listContainer = document.getElementById("toDoListContainer");
+        const listContainer = document.getElementById("listContainer");
         listContainer.append(listTag);
         document.getElementById("input").value = ''
         deleteItem();
