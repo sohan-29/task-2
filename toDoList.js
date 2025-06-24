@@ -5,6 +5,7 @@ window.onload = function () {
 
 function toDoList() {
     const input = document.getElementById("input").value;
+    if (input !== "") {
     const listTag = document.createElement("li");
     listTag.className = "list";
     const listItem = document.createElement("input");
@@ -16,4 +17,7 @@ function toDoList() {
     const listContainer = document.getElementById("toDoListContainer");
     listContainer.append(listTag);
     document.getElementById("input").value = ''
+    } else {
+        alert("Please enter a task");
+    }
 }
